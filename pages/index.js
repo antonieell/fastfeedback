@@ -20,9 +20,9 @@ export default function Home() {
         </p>
         <div>{auth?.user?.email}</div>
         {auth.user ? (
-          <button onClick={() => auth.signinWithGithub()}>Sign In</button>
-        ) : (
           <button onClick={() => auth.signout()}>Sign out</button>
+        ) : (
+          <button onClick={() => auth.signinWithGitHub()}>Sign In</button>
         )}
       </main>
 
